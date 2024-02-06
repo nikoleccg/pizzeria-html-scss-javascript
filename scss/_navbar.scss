@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: $color-fondo;
+}
+
+#chat{
+        position: fixed;
+        width: 200px;
+        height: 40px;
+        bottom: 0;
+        right: 20px;
+        background: $color-primario;
+        border: 1px solid white;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        border-radius: 20px 20px 0 0px;
+        cursor: pointer;
+
+    }
+
+/* barra de navegación */
+header {
+    background-color: $color-primario;
+    color: $color-texto;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-left img {
+    max-width: 130px;
+    margin-top: 7px;
+}
+
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-right li {
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: $color-texto;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+    color: $color-hover; 
+}

@@ -1,0 +1,61 @@
+/* Estilos para el footer */
+footer {
+    background-color: $color-fondo-oscuro; 
+    color: $color-texto; 
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-left {
+    img {
+        max-width: 150px;
+    }
+}
+
+.footer-center {
+    margin-left: 100px;
+}
+
+.footer-center ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-center ul li {
+    margin-bottom: 10px;
+}
+
+.footer-center a {
+    text-decoration: none;
+    color: $color-texto; 
+    font-weight: bold;
+}
+
+.footer-right {
+    text-align: center;
+}
+
+.footer-right p {
+    font-size: 16px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: $color-texto; 
+    font-size: 24px;
+}
+
+.copyright {
+    background-color: $color-fondo-oscuro;
+    color: $color-texto;
+    text-align: center;
+    padding: 10px 0;
+}

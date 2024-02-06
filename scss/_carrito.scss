@@ -1,0 +1,265 @@
+.carrito {
+    text-align: center;
+    padding: 20px;
+}
+
+.carrito h1 {
+    color: $color-primario;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.acciones div {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 19.39px;
+    word-wrap: break-word;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.icono{
+    width: 34px;
+    height: 34px;
+    background: #838383;
+    border-radius: 50%;
+}
+
+.icono-activo{
+    width: 34px;
+    height: 34px;
+    background: $color-primario;
+    border-radius: 50%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid $color-borde;
+    padding: 10px;
+}
+
+th {
+    background: $color-fondo; 
+    text-transform: uppercase;
+}
+
+.subtotal {
+    margin-top: 20px;
+}
+
+.subtotal span {
+    font-weight: bold;
+}
+
+.comprar-btn {
+    background-color: $color-hover;
+    color: $color-texto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.carrito-comprar {
+    text-align: center;
+    padding: 20px;
+}
+
+.compra-izquierda, .compra-derecha {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.compra-izquierda h2, .compra-derecha h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.compra-izquierda table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.compra-izquierda table td {
+    padding: 5px 0;
+}
+
+.compra-derecha .direccion-box {
+    margin-top: 20px;
+}
+
+.direccion-input {
+    position: relative;
+}
+
+.direccion-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.direccion-input i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.direccion-box textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.finalizar-btn {
+    background-color: $color-primario;
+    color: $color-texto; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.confirmacion-pedido {
+    width: 50%;
+    background-color: $color-fondo;
+    padding: 20px;
+    border: 1px solid $color-borde;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    }
+
+.confirmacion-pedido h2 {
+    background-color: $color-primario;
+    color: $color-texto;
+    padding: 10px;
+    margin: 0;
+}
+
+.detalle-pedido {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.icono-success {
+    text-align: center;
+}
+
+.icono-success i {
+    color: $color-success;
+    font-size: 48px;
+}
+
+.carrito-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.carrito-dropdown:hover .carrito-contenido-desplegado {
+    display: block;
+}
+
+.carrito-contenido-desplegado {
+    display: none;
+    position: absolute;
+    right: -200px;
+    background-color: #ffffff;
+    min-width: 400px; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 30px;
+}
+
+#lista-carrito {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    li {
+        margin-bottom: 10px;
+    }
+    p {
+        color: black;
+    }
+}
+
+.producto-carrito {
+    display: flex;
+    img {
+        max-width: 100px;
+        margin-right: 10px;
+    }
+}
+
+.producto-info {
+    flex: 1;
+    color: black;
+    .precio {
+        color: $color-precio;
+    }
+}
+
+#total-carrito {
+    margin-top: 10px;
+    font-weight: bold;
+    color: $color-primario;
+}
+
+#comprar-btn {
+    background-color: $color-primario;
+    border-radius: 10px;
+    color: $color-texto;
+    border: none;
+    padding: 10px 10px;
+    margin-top: auto;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+
+
+.eliminar-producto {
+    background-color: #b41e04;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    &:hover {
+        background-color: $color-hover; 
+    }
+}

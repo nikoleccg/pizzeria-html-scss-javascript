@@ -1,0 +1,87 @@
+.menu {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-titulo {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.menu-botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .menu-btn {
+        background-color: $color-primario;
+        color: $color-texto;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-hover;
+        }
+    }
+}
+.menu-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .menu-producto {
+        width: 45%;
+        border: 1px solid $color-borde;
+        margin: 10px;
+        padding: 10px;
+        display: flex; /* Usamos flexbox para dividir en dos partes */
+        align-items: center; /* Alineación vertical */
+        
+        img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        .producto-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px; /* Espaciado entre la imagen y el texto */
+            
+            h2 {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            .precio {
+                font-size: 16px;
+                color: $color-primario;
+            }
+
+            .descripcion {
+                font-size: 14px;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .btn-carrito {
+                background-color: $color-primario;
+                border-radius: 10px;
+                color: $color-texto;
+                border: none;
+                padding: 5px 10px;
+                margin-top: auto;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color-hover;
+                }
+            }
+        }
+    }
+}
